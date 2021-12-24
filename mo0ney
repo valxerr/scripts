@@ -1,0 +1,7 @@
+local multiplier = 100000 -- dont set it too much high or it will crash
+for i=1, multiplier do
+task.spawn(function()
+task.wait()
+game:GetService("ReplicatedStorage").Money:FireServer()
+end)
+end
